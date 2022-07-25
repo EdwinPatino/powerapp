@@ -1,0 +1,47 @@
+"Error As screen.'tabletLayout_Success_ver3.0'":
+
+    Icon5 As icon.Warning:
+        Color: =RGBA(184, 0, 0, 1)
+        Height: =144
+        Icon: =Icon.Warning
+        Width: =167
+        X: =608
+        Y: =259
+        ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(172, 62, 11, 1)
+        Height: =68
+        Size: =20
+        Text: ="Este procedimiento no se pudo realizar"
+        Width: =537
+        X: =423
+        Y: =496
+        ZIndex: =2
+
+    Icon6 As icon.BackArrow:
+        BorderColor: =RGBA(172, 62, 11, 1)
+        Color: =RGBA(172, 62, 11, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =106
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Pagina principal')
+        Width: =93
+        X: =8
+        Y: =123
+        ZIndex: =3
+
+    Label8_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(172, 62, 11, 1)
+        Height: =83
+        Size: =24
+        Text: ="Error"
+        Width: =1350
+        X: =8
+        Y: =40
+        ZIndex: =4
+

@@ -1,0 +1,46 @@
+{
+  "0be06f19-43c4-4639-8f28-60033b979324": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://ccolabs.sharepoint.com/sites/EdwinPatioApp": {
+        "dataSources": {
+          "Ordenes de producto": {
+            "tableName": "89099601-0cb3-473d-860b-adb8a4991f80"
+          },
+          "Ordenes de producto_1": {
+            "tableName": "89099601-0cb3-473d-860b-adb8a4991f80"
+          },
+          "Ordenes de producto_2": {
+            "tableName": "89099601-0cb3-473d-860b-adb8a4991f80"
+          },
+          "Registro de productos": {
+            "tableName": "aceb875e-1edf-4c8e-ad28-c19ff54c42f7"
+          },
+          "Registro de productos_1": {
+            "tableName": "aceb875e-1edf-4c8e-ad28-c19ff54c42f7"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Registro de productos",
+      "Ordenes de producto",
+      "Ordenes de producto_1",
+      "Ordenes de producto_2",
+      "Registro de productos_1"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0be06f19-43c4-4639-8f28-60033b979324"
+  }
+}

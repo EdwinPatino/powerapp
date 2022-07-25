@@ -1,0 +1,126 @@
+"'Vista productos' As screen":
+    Fill: =RGBA(253, 222, 207, 1)
+    ImagePosition: =ImagePosition.Stretch
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver4.0'":
+        Items: ='Registro de productos'
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(168, Self.Height - 60)
+        Width: =1290
+        X: =52
+        Y: =140
+        ZIndex: =1
+
+        Image5 As image:
+            Height: =128
+            Image: =ThisItem.Imagen
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image5.Width - 104
+            X: =Image5.X + Image5.Width + 16
+            Y: =16
+            ZIndex: =2
+
+        Subtitle4 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.ID
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title4.Width
+            X: =Title4.X
+            Y: =62
+            ZIndex: =3
+
+        Body2 As label:
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Nombre de producto'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Subtitle4.Width
+            X: =Subtitle4.X
+            Y: =Subtitle4.Y + Subtitle4.Height + 4
+            ZIndex: =4
+
+        NextArrow4 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =ResetForm(Productos);ViewForm(Productos);Navigate('Formulario Productos')
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Ver los detalles del elemento"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =5
+
+        Separator4 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =6
+
+        Icon3 As icon.Edit:
+            Icon: =Icon.Edit
+            OnSelect: =ResetForm(Productos);EditForm(Productos);Navigate('Formulario Productos')
+            X: =1107
+            Y: =50
+            ZIndex: =7
+
+    Label9 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(172, 62, 11, 1)
+        Height: =75
+        Size: =20
+        Text: ="Productos"
+        Width: =1326
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+    Icon4 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Add
+        OnSelect: =ResetForm(Productos);NewForm(Productos);Navigate('Formulario Productos')
+        X: =1278
+        Y: =45
+        ZIndex: =3
+
+    Icon2_2 As icon.CancelBadge:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =63
+        Icon: =Icon.CancelBadge
+        OnSelect: =Navigate('Pagina principal')
+        Width: =62
+        X: =52
+        Y: =45
+        ZIndex: =4
+

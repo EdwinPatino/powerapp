@@ -1,0 +1,56 @@
+"Confirmacion As screen.'tabletLayout_Success_ver3.0'":
+
+    iconCircle1 As circle.Circle:
+        Fill: =RGBA(172, 62, 11, 1)
+        X: =631
+        Y: =354
+        ZIndex: =1
+
+    iconCheck1 As icon.Check:
+        Height: =iconCircle1.Height
+        Icon: =Icon.Check
+        PaddingBottom: =Self.PaddingTop
+        PaddingLeft: =Self.PaddingTop
+        PaddingRight: =Self.PaddingTop
+        PaddingTop: =24
+        Width: =iconCircle1.Width
+        X: =631
+        Y: =354
+        ZIndex: =2
+
+    LblSuccessMsg1 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(172, 62, 11, 1)
+        Height: =iconCircle1.Height
+        Size: =20
+        Text: ="Este registro se completó correctamente."
+        Width: =Parent.Width * 0.75
+        X: =169
+        Y: =575
+        ZIndex: =3
+
+    Icon1 As icon.BackArrow:
+        Color: =RGBA(172, 62, 11, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =95
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Pagina principal')
+        Width: =106
+        X: =8
+        Y: =123
+        ZIndex: =4
+
+    Label8 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(172, 62, 11, 1)
+        Height: =83
+        Size: =24
+        Text: ="Confirmación"
+        Width: =1350
+        X: =8
+        Y: =40
+        ZIndex: =5
+
